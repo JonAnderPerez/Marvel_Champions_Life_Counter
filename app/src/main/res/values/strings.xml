@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Marvel Champions Life Counter</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- BTN -->
+    <string name="btn_new_game">Nueva Partida</string>
+    <string name="btn_continue">Continuar</string>
+
+    <!-- IMG ALT -->
+    <string name="img_alt_home">Logo de Marvel Champions el juego de cartas</string>
 </resources>

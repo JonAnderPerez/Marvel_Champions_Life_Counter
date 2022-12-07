@@ -5,6 +5,20 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <color name="primary">#FF7416B8</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="btn_blue">#FF1E83B7</color>
+    <color name="btn_yellow">#FFDDB61D</color>
+    <color name="sel_1">#9A2BABB4</color>
+    <color name="sel_2">#9A2EB42B</color>
+    <color name="sel_3">#9AB42B2B</color>
+    <color name="sel_4">#9AB47D2B</color>
+    <color name="tough">#FFD88100</color>
+    <color name="stunned">#FF86E73B</color>
+    <color name="confused">#FFAD00D9</color>
+    <color name="hero">#FF1E83B7</color>
+    <color name="villain">#FFDDB61D</color>
+    <color name="plan">#FF86E73B</color>
 </resources>
