@@ -2,10 +2,17 @@
     <string name="app_name">Marvel Champions Life Counter</string>
     <string name="title_activity_home">HomeActivity</string>
 
+    <!-- ACTIVITY LABEL -->
+    <string name="sel_heroes_activity">Selección de Heroes</string>
+
     <!-- BTN -->
     <string name="btn_new_game">Nueva Partida</string>
     <string name="btn_continue">Continuar</string>
+    <string name="btn_return">Volver</string>
+    <string name="btn_villan">Villano</string>
 
     <!-- IMG ALT -->
     <string name="img_alt_home">Logo de Marvel Champions el juego de cartas</string>
+    <string name="img_alt_sel_heroe">Imagen seleccionable del heroe</string>
+    <string name="img_alt_sel_villain">Imagen seleccionable del villano</string>
 </resources>

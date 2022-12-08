@@ -25,6 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".usecases.select.heroes.SelectHeroesActivity"
+            android:label="@string/sel_heroes_activity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/Theme.MarvelChampionsLifeCounter"/>
     </application>
 
 </manifest>

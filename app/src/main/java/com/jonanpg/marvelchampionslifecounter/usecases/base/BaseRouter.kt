@@ -16,8 +16,3 @@ interface BaseActivityRouter {
     fun launch(activity: Context) = activity.startActivity(intent(activity))
 
 }
-
-interface BaseFragmentRouter {
-
-    //Fragment
-}

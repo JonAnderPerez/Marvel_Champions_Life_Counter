@@ -1,8 +1,9 @@
 package com.jonanpg.marvelchampionslifecounter.usecases.home
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -15,14 +16,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.view.WindowCompat
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import com.jonanpg.marvelchampionslifecounter.R
 import com.jonanpg.marvelchampionslifecounter.ui.theme.Btn_blue
 import com.jonanpg.marvelchampionslifecounter.ui.theme.Btn_yellow
 import com.jonanpg.marvelchampionslifecounter.ui.theme.Primary
+import com.jonanpg.marvelchampionslifecounter.usecases.select.heroes.SelectHeroesActivity
 import com.jonanpg.marvelchampionslifecounter.util.extension.HomePageButton
 
 /**
@@ -30,16 +30,14 @@ import com.jonanpg.marvelchampionslifecounter.util.extension.HomePageButton
  * www.jonanpg.com
  */
 class HomeActivity: ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-            setContent {
-                MaterialTheme {
-                    HomeLayout()
-                }
+        setContent {
+            MaterialTheme {
+                HomeLayout()
             }
+        }
     }
-
 }
 
 @Composable
@@ -91,23 +89,26 @@ fun HomeLayout() {
 
 @Composable
 fun HomeButtons() {
+
+    val context: Context = LocalContext.current
+
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
         HomePageButton(
-            onClick = {},
-            text = LocalContext.current.getString(R.string.btn_new_game),
-            color = Btn_blue)
+            onClick = {
+                context.startActivity(Intent(context, SelectHeroesActivity::class.java))
+            },
+            text = context.getString(R.string.btn_new_game),
+            color = Btn_blue
+        )
         HomePageButton(
-            onClick = {},
-            text = LocalContext.current.getString(R.string.btn_continue),
-            color = Btn_yellow)
-    }
-}
+            onClick = {
 
-@Preview
-@Composable
-fun PreviewText(){
-    HomeLayout()
+            },
+            text = context.getString(R.string.btn_continue),
+            color = Btn_yellow
+        )
+    }
 }
